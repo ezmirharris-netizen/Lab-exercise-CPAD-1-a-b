@@ -2,76 +2,104 @@
 <html>
 <head>
   <title>Contact Me</title>
+
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body style="font-family: Arial; padding: 20px; background:#f9f9f9;">
 
-<h3 style="color:blue;">Contact Me</h3>
+<body>
 
-<form action="#" method="post" style="padding:15px; border:1px solid #000; background:#fff;">
+<header>
+  <h2>Contact Me</h2>
+</header>
 
-<fieldset style="padding:10px;">
-<legend>Info</legend>
+<nav>
+  <div>My Site</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
 
-<label for="n">Name:</label>
-<input type="text" id="n" name="n" required maxlength="50"
-style="padding:5px; border:1px solid #000;"><br><br>
+<main>
 
-<label for="e">Email:</label>
-<input type="email" id="e" name="e" required
-style="padding:5px; border:1px solid #000;"><br><br>
+<form action="#" method="post">
 
-<label for="p">Phone:</label>
-<input type="tel" id="p" name="p" required
-style="padding:5px; border:1px solid #000;"><br><br>
+  <fieldset>
+    <legend>Info</legend>
 
-<label for="a">Age:</label>
-<input type="number" id="a" name="a" min="1" max="100" required
-style="padding:5px; border:1px solid #000;"><br><br>
+    <label for="n">Name:</label>
+    <input type="text" id="n" name="n" required maxlength="50">
 
-<label for="d">Date:</label>
-<input type="date" id="d" name="d" required
-style="padding:5px; border:1px solid #000;"><br><br>
+    <label for="e">Email:</label>
+    <input type="email" id="e" name="e" required>
 
-</fieldset>
+    <label for="p">Phone:</label>
+    <input type="tel" id="p" name="p" required>
 
-<fieldset style="padding:10px; margin-top:10px;">
-<legend>Details</legend>
+    <label for="a">Age:</label>
+    <input type="number" id="a" name="a" min="1" max="100" required>
 
-<label for="s">Subject:</label>
-<select id="s" name="s" required style="padding:5px; border:1px solid #000;">
-<optgroup label="General">
-<option>Question</option>
-<option>Feedback</option>
-</optgroup>
-<optgroup label="Other">
-<option>Support</option>
-<option>Others</option>
-</optgroup>
-</select><br><br>
+    <label for="d">Date:</label>
+    <input type="date" id="d" name="d" required>
 
-<label>Contact:</label>
-<input type="radio" id="r1" name="c" required><label for="r1">Email</label>
-<input type="radio" id="r2" name="c"><label for="r2">Phone</label>
-<input type="radio" id="r3" name="c"><label for="r3">Any</label><br><br>
+  </fieldset>
 
-<label>Options:</label>
-<input type="checkbox" id="c1" name="o"><label for="c1">1</label>
-<input type="checkbox" id="c2" name="o"><label for="c2">2</label>
-<input type="checkbox" id="c3" name="o"><label for="c3">3</label><br><br>
+  <fieldset>
+    <legend>Details</legend>
 
-<label for="r">Range:</label>
-<input type="range" id="r" name="r" min="0" max="10"><br><br>
+    <label for="s">Subject:</label>
+    <select id="s" name="s" required>
+      <optgroup label="General">
+        <option>Question</option>
+        <option>Feedback</option>
+      </optgroup>
+      <optgroup label="Other">
+        <option>Support</option>
+        <option>Others</option>
+      </optgroup>
+    </select>
 
-<label for="m">Message:</label>
-<textarea id="m" name="m" required maxlength="200"
-style="padding:5px; border:1px solid #000;"></textarea><br><br>
+    <p>Contact:</p>
+    <input type="radio" id="r1" name="c" required>
+    <label for="r1">Email</label>
 
-</fieldset>
+    <input type="radio" id="r2" name="c">
+    <label for="r2">Phone</label>
 
-<input type="submit" value="Send"
-style="padding:8px; background:#000; color:#fff; border:none;">
+    <input type="radio" id="r3" name="c">
+    <label for="r3">Any</label>
+
+    <p>Options:</p>
+    <input type="checkbox" id="c1" name="o">
+    <label for="c1">Option 1</label>
+
+    <input type="checkbox" id="c2" name="o">
+    <label for="c2">Option 2</label>
+
+    <input type="checkbox" id="c3" name="o">
+    <label for="c3">Option 3</label>
+
+    <label for="r">Range:</label>
+    <input type="range" id="r" name="r" min="0" max="10">
+
+    <label for="m">Message:</label>
+    <textarea id="m" name="m" required maxlength="200"></textarea>
+
+  </fieldset>
+
+  <input type="submit" value="Send">
 
 </form>
+
+</main>
+
+<footer>
+  <p>© 2026 My Portfolio</p>
+</footer>
 
 </body>
 </html>
