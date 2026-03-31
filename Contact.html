@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Me</title>
+</head>
+<body style="font-family: Arial; padding: 20px; background:#f9f9f9;">
+
+<h3 style="color:blue;">Contact Me</h3>
+
+<form action="#" method="post" style="padding:15px; border:1px solid #000; background:#fff;">
+
+<fieldset style="padding:10px;">
+<legend>Info</legend>
+
+<label for="n">Name:</label>
+<input type="text" id="n" name="n" required maxlength="50"
+style="padding:5px; border:1px solid #000;"><br><br>
+
+<label for="e">Email:</label>
+<input type="email" id="e" name="e" required
+style="padding:5px; border:1px solid #000;"><br><br>
+
+<label for="p">Phone:</label>
+<input type="tel" id="p" name="p" required
+style="padding:5px; border:1px solid #000;"><br><br>
+
+<label for="a">Age:</label>
+<input type="number" id="a" name="a" min="1" max="100" required
+style="padding:5px; border:1px solid #000;"><br><br>
+
+<label for="d">Date:</label>
+<input type="date" id="d" name="d" required
+style="padding:5px; border:1px solid #000;"><br><br>
+
+</fieldset>
+
+<fieldset style="padding:10px; margin-top:10px;">
+<legend>Details</legend>
+
+<label for="s">Subject:</label>
+<select id="s" name="s" required style="padding:5px; border:1px solid #000;">
+<optgroup label="General">
+<option>Question</option>
+<option>Feedback</option>
+</optgroup>
+<optgroup label="Other">
+<option>Support</option>
+<option>Others</option>
+</optgroup>
+</select><br><br>
+
+<label>Contact:</label>
+<input type="radio" id="r1" name="c" required><label for="r1">Email</label>
+<input type="radio" id="r2" name="c"><label for="r2">Phone</label>
+<input type="radio" id="r3" name="c"><label for="r3">Any</label><br><br>
+
+<label>Options:</label>
+<input type="checkbox" id="c1" name="o"><label for="c1">1</label>
+<input type="checkbox" id="c2" name="o"><label for="c2">2</label>
+<input type="checkbox" id="c3" name="o"><label for="c3">3</label><br><br>
+
+<label for="r">Range:</label>
+<input type="range" id="r" name="r" min="0" max="10"><br><br>
+
+<label for="m">Message:</label>
+<textarea id="m" name="m" required maxlength="200"
+style="padding:5px; border:1px solid #000;"></textarea><br><br>
+
+</fieldset>
+
+<input type="submit" value="Send"
+style="padding:8px; background:#000; color:#fff; border:none;">
+
+</form>
+
+</body>
+</html>
