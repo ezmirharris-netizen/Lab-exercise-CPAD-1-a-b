@@ -77,13 +77,13 @@ nav a {
 }
 
 nav a:hover { background: var(--color-accent-2); color:white; }
-nav a.active { border-bottom: 0.2rem solid var(--color-accent-1); }
+nav a.active { border-bottom: 0.2rem solid var(--color-primary);}
 
 /* Links states */
 a:link { color: var(--color-primary); }
 a:visited { color: var(--color-primary); }
 a:hover { color: var(--color-accent-2); }
-a:active { color: var(--color-accent-1); }
+a:active { color: var(--color-accent-2); }
 
 /* Header flex */
 .header-container {
