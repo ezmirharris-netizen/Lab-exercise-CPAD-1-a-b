@@ -36,6 +36,7 @@ h1 { font-size: 2.8rem; line-height: 1.3; color: var(--color-secpndary); }
 h2 { font-size: 2.2rem; line-height: 1.3; color: var(--color-secondary); }
 h3 { font-size: 1.8rem; line-height: 1.3; color: var(--color-secondary); }
 h4 { font-size: 1.6rem; line-height: 1.3; color: var(--color-secondary); }
+.Contacth4 { font-size: 1.6rem; line-height: 1.0; color: var(--color-secondary); }
 p { font-size: 1.4rem; line-height: 1.6; color: var(--color-secondary); }
 small { font-size: 1.2rem; }
 blockquote { font-size: 1.4rem; color: var(--color-grey-2); }
@@ -75,7 +76,7 @@ nav a {
   border-radius: 0.3rem;
 }
 
-nav a:hover { background: var(--color-accent-2); }
+nav a:hover { background: var(--color-accent-2); color:white; }
 nav a.active { border-bottom: 0.2rem solid var(--color-accent-1); }
 
 /* Links states */
@@ -157,12 +158,12 @@ h2::after {
 
 /* Table */
 tbody tr:nth-child(even) {
-  background: var(--color-grey-3);
+  background: var(--color-secondary);
 }
 
 /* List fix */
-ul li:first-child { border-top: none; }
-ul li:last-child { border-bottom: none; }
+tr:first-child { background: var(--color-grey-2); }
+tr:last-child { background: var(--color-grey-2);}
 
 /* Tablet */
 @media (min-width: 600px) {

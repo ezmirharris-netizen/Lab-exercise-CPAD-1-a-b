@@ -2,104 +2,83 @@
 <html>
 <head>
   <title>Contact Me</title>
-
   <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
-
-<header>
-  <h2>Contact Me</h2>
-</header>
-
-<nav>
-  <div>My Site</div>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="skills.html">Skills</a></li>
-    <li><a href="Project.html">Projects</a></li>
-    <li><a href="contact.html" class="active">Contact</a></li>
-  </ul>
+    <header>
+        <h1>Ezmir Harris Bin Edeyhely</h1>
+        <p>Tech Enthusiast</p>
+    </header>
+  <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="Skills.html">Top Skills</a></li>
+        <li><a href="Academic.html">Academic Section</a></li>
+        <li><a href="Project.html">Project Image</a></li>
+        <li><a href="Contact.html" class="active">Contact Info</a></li>
+    </ul>
 </nav>
 
-<main>
+<h3>Contact Me</h3>
 
 <form action="#" method="post">
 
-  <fieldset>
-    <legend>Info</legend>
+<fieldset>
+<legend>Info</legend>
 
-    <label for="n">Name:</label>
-    <input type="text" id="n" name="n" required maxlength="50">
+<label for="n">Name:</label>
+<input type="text" id="n" name="n" required maxlength="50"><br><br>
 
-    <label for="e">Email:</label>
-    <input type="email" id="e" name="e" required>
+<label for="e">Email:</label>
+<input type="email" id="e" name="e"><br><br>
 
-    <label for="p">Phone:</label>
-    <input type="tel" id="p" name="p" required>
+<label for="p">Phone:</label>
+<input type="tel" id="p" name="p"><br><br>
 
-    <label for="a">Age:</label>
-    <input type="number" id="a" name="a" min="1" max="100" required>
+<label for="a">Age:</label>
+<input type="number" id="a" name="a" min="1" max="100"><br><br>
 
-    <label for="d">Date:</label>
-    <input type="date" id="d" name="d" required>
+<label for="d">Date:</label>
+<input type="date" id="d" name="d"><br><br>
 
-  </fieldset>
+</fieldset>
 
-  <fieldset>
-    <legend>Details</legend>
+<fieldset>
+<legend>Details</legend>
 
-    <label for="s">Subject:</label>
-    <select id="s" name="s" required>
-      <optgroup label="General">
-        <option>Question</option>
-        <option>Feedback</option>
-      </optgroup>
-      <optgroup label="Other">
-        <option>Support</option>
-        <option>Others</option>
-      </optgroup>
-    </select>
+<label for="s">Subject:</label>
+<select id="s" name="s">
+<optgroup label="General">
+<option>Software Engineering</option>
+<option>Data Engineering</option>
+</optgroup>
+<optgroup label="Other">
+<option>Graphic Multimedia</option>
+<option>Bioinformatics</option>
+</optgroup>
+</select><br><br>
 
-    <h4>Contact:</h4>
-    <input type="radio" id="r1" name="c" required>
-    <label for="r1">Email</label>
+<label>Contact:</label>
+<input type="radio" id="r1" name="c" required><label for="r1">Email</label>
+<input type="radio" id="r2" name="c"><label for="r2">Phone</label>
+<input type="radio" id="r3" name="c"><label for="r3">Any</label><br><br>
 
-    <input type="radio" id="r2" name="c">
-    <label for="r2">Phone</label>
+<label>Race:</label>
+<input type="checkbox" id="c1" name="o"><label for="c1">Malay</label>
+<input type="checkbox" id="c2" name="o"><label for="c2">Indian</label>
+<input type="checkbox" id="c3" name="o"><label for="c3">Chinese</label><br><br>
 
-    <input type="radio" id="r3" name="c">
-    <label for="r3">Any</label>
 
-    <h4>Race:</h4>
-    <input type="checkbox" id="c1" name="o">
-    <label for="c1">Malay</label>
+<label for="m">Short Description:</label>
+<textarea id="m" name="m" required maxlength="200"></textarea><br><br>
 
-    <input type="checkbox" id="c2" name="o">
-    <label for="c2">Chinese</label>
+</fieldset>
 
-    <input type="checkbox" id="c3" name="o">
-    <label for="c3">Indian</label>
-
-    <label for="r">Age:</label>
-    <input type="range" id="r" name="r" min="0" max="10">
-
-    <label for="m">Message:</label>
-    <textarea id="m" name="m" required maxlength="200"></textarea>
-
-  </fieldset>
-
-  <input type="submit" value="Send">
+<input type="submit" value="Send">
 
 </form>
-
-</main>
-
-<footer>
-  <p>© 2026 My Portfolio</p>
-</footer>
 
 </body>
 </html>
